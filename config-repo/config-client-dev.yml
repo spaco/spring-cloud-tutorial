@@ -1,0 +1,4 @@
+filename: config-client-dev.yml
+config-client-dev:
+  yml: config-client-dev.yml
+  unique: config-client-dev.yml

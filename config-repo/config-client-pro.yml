@@ -1,0 +1,4 @@
+filename: config-client-pro.yml
+config-client-pro:
+  yml: config-client-pro.yml
+  unique: config-client-pro.yml
