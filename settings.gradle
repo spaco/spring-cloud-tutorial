@@ -1,0 +1,4 @@
+rootProject.name = 'spring-cloud-tutorial'
+include 'ergfrhtr'
+include 'config-client'
+
