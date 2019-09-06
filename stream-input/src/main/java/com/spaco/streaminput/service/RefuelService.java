@@ -12,7 +12,10 @@ public class RefuelService {
 
     @StreamListener(RefuelChannel.INPUT)
     public void receive(Object payload){
+        //openId 由那个服务获取？saas or notification
         log.info("received message: {}",payload);
         System.out.println(payload);
+
+
     }
 }

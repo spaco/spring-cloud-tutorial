@@ -1,0 +1,610 @@
+2019-09-06 13:59:31.702 [restartedMain] INFO  com.spaco.streamoutput.StreamOutputApplication - No active profile set, falling back to default profiles: default
+2019-09-06 13:59:32.303 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=f55fc7f8-a0c3-32ba-8a16-6d20d097a5e1
+2019-09-06 13:59:32.307 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2019-09-06 13:59:32.311 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2019-09-06 13:59:32.313 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2019-09-06 13:59:32.339 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$beb97351] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 13:59:32.346 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 13:59:32.352 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eb0761ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 13:59:32.372 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$55f91cfd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 13:59:32.375 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration$$EnhancerBySpringCGLIB$$318b281d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 13:59:32.380 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration$$EnhancerBySpringCGLIB$$6a72d0ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 13:59:32.382 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 13:59:32.393 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$72164cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 13:59:32.565 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2019-09-06 13:59:32.578 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-06 13:59:32.578 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-06 13:59:32.629 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-06 13:59:32.629 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 921 ms
+2019-09-06 13:59:32.916 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-09-06 13:59:33.198 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-06 13:59:33.482 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2019-09-06 13:59:33.536 [restartedMain] INFO  o.s.cloud.function.web.mvc.FunctionHandlerMapping - FunctionCatalog: org.springframework.cloud.function.context.config.ContextFunctionCatalogAutoConfiguration$BeanFactoryFunctionCatalog@1aff024c
+2019-09-06 13:59:33.586 [restartedMain] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-06 13:59:33.708 [restartedMain] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Registering MessageChannel errorChannel
+2019-09-06 13:59:33.766 [restartedMain] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Registering MessageChannel refuel
+2019-09-06 13:59:33.786 [restartedMain] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Registering MessageChannel nullChannel
+2019-09-06 13:59:33.796 [restartedMain] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Registering MessageHandler errorLogger
+2019-09-06 13:59:33.814 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2019-09-06 13:59:33.814 [restartedMain] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application-1.errorChannel' has 1 subscriber(s).
+2019-09-06 13:59:33.815 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - started _org.springframework.integration.errorLogger
+2019-09-06 14:00:14.120 [restartedMain] INFO  o.s.c.s.b.kafka.provisioning.KafkaTopicProvisioner - Using kafka topic for outbound: destination-demo
+2019-09-06 14:00:14.121 [restartedMain] INFO  org.apache.kafka.clients.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2019-09-06 14:00:14.144 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-09-06 14:00:14.144 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-09-06 14:00:14.245 [restartedMain] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2019-09-06 14:00:14.254 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-09-06 14:00:14.255 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-09-06 14:00:14.259 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - Cluster ID: JwZNaOm7TVq4n0EqvmmRDw
+2019-09-06 14:00:14.261 [restartedMain] INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2019-09-06 14:00:14.266 [restartedMain] INFO  o.s.c.stream.messaging.DirectWithAttributesChannel - Channel 'application-1.refuel' has 1 subscriber(s).
+2019-09-06 14:00:14.294 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2019-09-06 14:00:14.296 [restartedMain] INFO  com.spaco.streamoutput.StreamOutputApplication - Started StreamOutputApplication in 58.042 seconds (JVM running for 63.458)
+2019-09-06 14:00:14.790 [pool-1-thread-1] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2019-09-06 14:00:14.792 [RMI TCP Connection(2)-192.168.10.39] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-06 14:00:14.792 [RMI TCP Connection(2)-192.168.10.39] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-09-06 14:00:14.800 [RMI TCP Connection(2)-192.168.10.39] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2019-09-06 14:00:14.811 [pool-1-thread-1] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-09-06 14:00:14.811 [pool-1-thread-1] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-09-06 14:00:14.817 [pool-1-thread-1] INFO  org.apache.kafka.clients.Metadata - Cluster ID: JwZNaOm7TVq4n0EqvmmRDw
+2019-09-06 14:06:22.430 [http-nio-8085-exec-2] ERROR com.spaco.streamoutput.controller.RefuelController - 发送Stream消息: message to send
+2019-09-06 14:06:22.440 [http-nio-8085-exec-2] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2019-09-06 14:06:22.444 [http-nio-8085-exec-2] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-09-06 14:06:22.444 [http-nio-8085-exec-2] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-09-06 14:06:22.456 [kafka-producer-network-thread | producer-2] INFO  org.apache.kafka.clients.Metadata - Cluster ID: JwZNaOm7TVq4n0EqvmmRDw
+2019-09-06 14:17:27.591 [http-nio-8085-exec-5] ERROR com.spaco.streamoutput.controller.RefuelController - 发送Stream消息: message to send
+2019-09-06 14:17:39.279 [http-nio-8085-exec-6] ERROR com.spaco.streamoutput.controller.RefuelController - 发送Stream消息: message to send
+2019-09-06 14:29:50.283 [http-nio-8085-exec-9] ERROR com.spaco.streamoutput.controller.RefuelController - 发送Stream消息: message to send
+2019-09-06 14:38:32.882 [http-nio-8085-exec-2] ERROR com.spaco.streamoutput.controller.RefuelController - 发送Stream消息: message to send
+2019-09-06 14:40:00.108 [Thread-2] INFO  o.s.integration.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2019-09-06 14:40:00.109 [Thread-2] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application-1.errorChannel' has 0 subscriber(s).
+2019-09-06 14:40:00.109 [Thread-2] INFO  o.s.integration.endpoint.EventDrivenConsumer - stopped _org.springframework.integration.errorLogger
+2019-09-06 14:40:00.111 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-06 14:40:00.113 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2019-09-06 14:40:00.115 [Thread-2] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Summary on shutdown: errorChannel
+2019-09-06 14:40:00.115 [Thread-2] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Summary on shutdown: refuel
+2019-09-06 14:40:00.115 [Thread-2] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Summary on shutdown: nullChannel
+2019-09-06 14:40:00.116 [Thread-2] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Summary on shutdown: _org.springframework.integration.errorLogger.handler
+2019-09-06 14:40:15.332 [restartedMain] INFO  com.spaco.streamoutput.StreamOutputApplication - No active profile set, falling back to default profiles: default
+2019-09-06 14:40:15.574 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=f55fc7f8-a0c3-32ba-8a16-6d20d097a5e1
+2019-09-06 14:40:15.575 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2019-09-06 14:40:15.575 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2019-09-06 14:40:15.576 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2019-09-06 14:40:15.583 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$beb97351] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 14:40:15.585 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 14:40:15.588 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eb0761ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 14:40:15.595 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$55f91cfd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 14:40:15.596 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration$$EnhancerBySpringCGLIB$$318b281d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 14:40:15.597 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration$$EnhancerBySpringCGLIB$$6a72d0ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 14:40:15.598 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 14:40:15.603 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$72164cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 14:40:15.663 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2019-09-06 14:40:15.665 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-06 14:40:15.665 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-06 14:40:15.675 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-06 14:40:15.675 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 342 ms
+2019-09-06 14:40:15.800 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-09-06 14:40:15.991 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-06 14:40:16.175 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2019-09-06 14:40:16.212 [restartedMain] INFO  o.s.cloud.function.web.mvc.FunctionHandlerMapping - FunctionCatalog: org.springframework.cloud.function.context.config.ContextFunctionCatalogAutoConfiguration$BeanFactoryFunctionCatalog@5840e9c6
+2019-09-06 14:40:16.252 [restartedMain] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-06 14:40:16.322 [restartedMain] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Registering MessageChannel nullChannel
+2019-09-06 14:40:16.327 [restartedMain] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Registering MessageChannel errorChannel
+2019-09-06 14:40:16.335 [restartedMain] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Registering MessageChannel refuel
+2019-09-06 14:40:16.343 [restartedMain] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Registering MessageHandler errorLogger
+2019-09-06 14:40:16.357 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2019-09-06 14:40:16.357 [restartedMain] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application-1.errorChannel' has 1 subscriber(s).
+2019-09-06 14:40:16.357 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - started _org.springframework.integration.errorLogger
+2019-09-06 14:40:56.628 [restartedMain] INFO  o.s.c.s.b.kafka.provisioning.KafkaTopicProvisioner - Using kafka topic for outbound: destination-demo
+2019-09-06 14:40:56.629 [restartedMain] INFO  org.apache.kafka.clients.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2019-09-06 14:40:56.630 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-09-06 14:40:56.630 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-09-06 14:40:56.643 [restartedMain] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2019-09-06 14:40:56.645 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-09-06 14:40:56.645 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-09-06 14:40:56.648 [kafka-producer-network-thread | producer-3] INFO  org.apache.kafka.clients.Metadata - Cluster ID: JwZNaOm7TVq4n0EqvmmRDw
+2019-09-06 14:40:56.648 [restartedMain] INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-3] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2019-09-06 14:40:56.649 [restartedMain] INFO  o.s.c.stream.messaging.DirectWithAttributesChannel - Channel 'application-1.refuel' has 1 subscriber(s).
+2019-09-06 14:40:56.664 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2019-09-06 14:40:56.665 [restartedMain] INFO  com.spaco.streamoutput.StreamOutputApplication - Started StreamOutputApplication in 56.408 seconds (JVM running for 2505.844)
+2019-09-06 14:40:56.668 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2019-09-06 14:50:03.007 [Thread-138] INFO  o.s.integration.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2019-09-06 14:50:03.009 [Thread-138] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application-1.errorChannel' has 0 subscriber(s).
+2019-09-06 14:50:03.009 [Thread-138] INFO  o.s.integration.endpoint.EventDrivenConsumer - stopped _org.springframework.integration.errorLogger
+2019-09-06 14:50:03.015 [Thread-138] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-06 14:50:03.017 [Thread-138] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2019-09-06 14:50:03.020 [Thread-138] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Summary on shutdown: nullChannel
+2019-09-06 14:50:03.020 [Thread-138] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Summary on shutdown: errorChannel
+2019-09-06 14:50:03.020 [Thread-138] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Summary on shutdown: refuel
+2019-09-06 14:50:03.020 [Thread-138] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Summary on shutdown: _org.springframework.integration.errorLogger.handler
+2019-09-06 14:50:18.365 [restartedMain] INFO  com.spaco.streamoutput.StreamOutputApplication - No active profile set, falling back to default profiles: default
+2019-09-06 14:50:18.642 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=f55fc7f8-a0c3-32ba-8a16-6d20d097a5e1
+2019-09-06 14:50:18.644 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2019-09-06 14:50:18.644 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2019-09-06 14:50:18.645 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2019-09-06 14:50:18.652 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$beb97351] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 14:50:18.654 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 14:50:18.657 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eb0761ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 14:50:18.664 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$55f91cfd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 14:50:18.665 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration$$EnhancerBySpringCGLIB$$318b281d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 14:50:18.666 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration$$EnhancerBySpringCGLIB$$6a72d0ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 14:50:18.667 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 14:50:18.671 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$72164cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 14:50:18.735 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2019-09-06 14:50:18.737 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-09-06 14:50:18.737 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-06 14:50:18.746 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-06 14:50:18.746 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 379 ms
+2019-09-06 14:50:18.883 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-09-06 14:50:19.070 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-06 14:50:19.243 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2019-09-06 14:50:19.276 [restartedMain] INFO  o.s.cloud.function.web.mvc.FunctionHandlerMapping - FunctionCatalog: org.springframework.cloud.function.context.config.ContextFunctionCatalogAutoConfiguration$BeanFactoryFunctionCatalog@3fa2e9ba
+2019-09-06 14:50:19.309 [restartedMain] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-09-06 14:50:19.365 [restartedMain] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Registering MessageChannel refuel
+2019-09-06 14:50:19.370 [restartedMain] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Registering MessageChannel nullChannel
+2019-09-06 14:50:19.374 [restartedMain] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Registering MessageChannel errorChannel
+2019-09-06 14:50:19.383 [restartedMain] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Registering MessageHandler errorLogger
+2019-09-06 14:50:19.397 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2019-09-06 14:50:19.397 [restartedMain] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application-1.errorChannel' has 1 subscriber(s).
+2019-09-06 14:50:19.397 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - started _org.springframework.integration.errorLogger
+2019-09-06 14:50:59.626 [restartedMain] INFO  o.s.c.s.b.kafka.provisioning.KafkaTopicProvisioner - Using kafka topic for outbound: destination-demo
+2019-09-06 14:50:59.626 [restartedMain] INFO  org.apache.kafka.clients.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2019-09-06 14:50:59.628 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-09-06 14:50:59.628 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-09-06 14:50:59.639 [restartedMain] INFO  org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+2019-09-06 14:50:59.641 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-09-06 14:50:59.641 [restartedMain] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-09-06 14:50:59.643 [kafka-producer-network-thread | producer-4] INFO  org.apache.kafka.clients.Metadata - Cluster ID: JwZNaOm7TVq4n0EqvmmRDw
+2019-09-06 14:50:59.644 [restartedMain] INFO  org.apache.kafka.clients.producer.KafkaProducer - [Producer clientId=producer-4] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2019-09-06 14:50:59.645 [restartedMain] INFO  o.s.c.stream.messaging.DirectWithAttributesChannel - Channel 'application-1.refuel' has 1 subscriber(s).
+2019-09-06 14:50:59.659 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2019-09-06 14:50:59.660 [restartedMain] INFO  com.spaco.streamoutput.StreamOutputApplication - Started StreamOutputApplication in 56.376 seconds (JVM running for 3108.844)
+2019-09-06 14:50:59.663 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
