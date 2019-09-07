@@ -1,8 +1,7 @@
-package com.spaco.streamoutput.service;
+package com.spaco.streamoutput.producer;
 
 import com.spaco.streamoutput.channel.RefuelChannel;
 import org.springframework.cloud.stream.annotation.EnableBinding;
-import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.messaging.support.MessageBuilder;
 
 //@EnableBinding(Source.class)
@@ -16,6 +15,11 @@ public class RefuelService {
     }
 
     public void send(String message)
+    {
+        refuelChannel.output().send(MessageBuilder.withPayload(message).build());
+    }
+
+    public void send(Object message)
     {
         refuelChannel.output().send(MessageBuilder.withPayload(message).build());
     }

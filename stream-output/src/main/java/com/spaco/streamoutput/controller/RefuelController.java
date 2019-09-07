@@ -1,9 +1,9 @@
 package com.spaco.streamoutput.controller;
 
-import com.spaco.streamoutput.service.RefuelService;
+import com.spaco.streamoutput.producer.RefuelService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -17,12 +17,11 @@ public class RefuelController {
     }
 
     @GetMapping("/refuel")
-    public String send()
+    public String send(@RequestBody Object message)
     {
-        String message = "hello message";
         log.error("sent message: {}",message);
         this.refuelService.send(message);
 
-        return message;
+        return message.toString();
     }
 }
