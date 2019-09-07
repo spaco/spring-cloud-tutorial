@@ -10,7 +10,7 @@ import java.util.List;
 @Data
 public abstract class AbstractNotification {
 
-    public enum Type{
+    public enum ViaType{
         mail("mail"),
         sms("sms"),
         database("database"),
@@ -18,12 +18,12 @@ public abstract class AbstractNotification {
 
         private final String type;
 
-        Type(String type) {
+        ViaType(String type) {
             this.type = type;
         }
     }
 
-    protected List<Type> via(){
+    protected List<ViaType> via(){
         return null;
     }
 

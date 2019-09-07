@@ -17,8 +17,8 @@ public class InviteAgreeNotification extends AbstractNotification {
     }
 
     @Override
-    public List<Type> via() {
-        return Arrays.asList(Type.sms, Type.weChatApplet);
+    public List<ViaType> via() {
+        return Arrays.asList(ViaType.sms, ViaType.weChatApplet);
     }
 
     @Override

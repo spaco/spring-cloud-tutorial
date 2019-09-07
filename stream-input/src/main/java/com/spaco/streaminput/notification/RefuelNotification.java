@@ -17,8 +17,8 @@ public class RefuelNotification extends AbstractNotification {
     }
 
     @Override
-    public List<Type> via() {
-        return Arrays.asList(Type.mail, Type.sms, Type.weChatApplet);
+    public List<ViaType> via() {
+        return Arrays.asList(ViaType.mail, ViaType.sms, ViaType.weChatApplet);
     }
 
     @Override
