@@ -12,25 +12,25 @@ public class InviteAgreeNotification extends AbstractNotification {
 
     private InviteAgreeMessage inviteAgreeMessage;
 
-    public InviteAgreeNotification(InviteAgreeMessage inviteAgreeMessage)
-    {
+    public InviteAgreeNotification(InviteAgreeMessage inviteAgreeMessage) {
         this.inviteAgreeMessage = inviteAgreeMessage;
     }
 
+    @Override
     public List<Type> via() {
         return Arrays.asList(Type.sms, Type.weChatApplet);
     }
 
-    public SmsTemplate toSms()
-    {
+    @Override
+    public SmsTemplate toSms() {
         SmsTemplate template = new SmsTemplate();
         template.setPhone(inviteAgreeMessage.getPhone());
         template.setContent("申请通过");
         return template;
     }
 
-    public WeChatAppletTemplate toWeChatApplet()
-    {
+    @Override
+    public WeChatAppletTemplate toWeChatApplet() {
         WeChatAppletTemplate template = new WeChatAppletTemplate();
         template.setContent("{}");
         template.setFormId("formId mock");
