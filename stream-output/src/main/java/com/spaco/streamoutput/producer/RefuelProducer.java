@@ -6,10 +6,10 @@ import org.springframework.messaging.support.MessageBuilder;
 
 //@EnableBinding(Source.class)
 @EnableBinding(RefuelChannel.class)
-public class RefuelService {
+public class RefuelProducer {
 
     private RefuelChannel refuelChannel;
-    public RefuelService(RefuelChannel refuelChannel)
+    public RefuelProducer(RefuelChannel refuelChannel)
     {
         this.refuelChannel = refuelChannel;
     }

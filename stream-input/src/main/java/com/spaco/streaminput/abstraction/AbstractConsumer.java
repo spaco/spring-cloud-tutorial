@@ -1,5 +1,6 @@
-package com.spaco.streaminput.abstraction.notification;
+package com.spaco.streaminput.abstraction;
 
+import com.spaco.streaminput.abstraction.contract.Messageable;
 import lombok.Data;
 
 @Data
@@ -9,7 +10,7 @@ public abstract class AbstractConsumer {
 //
 //    }
 
-//    public void receive(Object payload){
+//    public void receive(Messageable messageable){
 //
 //    }
 

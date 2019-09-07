@@ -1,4 +1,4 @@
-package com.spaco.streaminput.abstraction.notification;
+package com.spaco.streaminput.abstraction;
 
 import com.spaco.streaminput.template.SmsTemplate;
 import com.spaco.streaminput.template.WeChatAppletTemplate;

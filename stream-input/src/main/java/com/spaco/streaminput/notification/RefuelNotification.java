@@ -1,6 +1,6 @@
 package com.spaco.streaminput.notification;
 
-import com.spaco.streaminput.abstraction.notification.AbstractNotification;
+import com.spaco.streaminput.abstraction.AbstractNotification;
 import com.spaco.streaminput.message.RefuelMessage;
 import com.spaco.streaminput.template.SmsTemplate;
 import com.spaco.streaminput.template.WeChatAppletTemplate;
