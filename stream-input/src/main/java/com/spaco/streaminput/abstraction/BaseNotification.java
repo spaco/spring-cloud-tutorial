@@ -11,11 +11,12 @@ import java.util.List;
 @Data
 public abstract class BaseNotification {
 
-    public enum ViaType{
+    public enum ViaType {
         mail("mail"),
         sms("sms"),
         database("database"),
-        weChatApplet("weChatApplet");
+        providerWeChatApplet("providerWeChatApplet"),
+        constructionWeChatApplet("constructionWeChatApplet");
 
         private final String type;
 
@@ -28,22 +29,28 @@ public abstract class BaseNotification {
         }
     }
 
-    protected List<ViaType> via(){
+    protected List<ViaType> via() {
         return null;
     }
 
-    public MailTemplate toMail() {
+    // send to many people
+    public List<MailTemplate> toMail() {
         return null;
     }
 
-    public void toDatabase() {
+    public List<SmsTemplate> toDatabase() {
+        return null;
     }
 
     public List<SmsTemplate> toSms() {
         return null;
     }
 
-    public WeChatAppletTemplate toWeChatApplet() {
+    public List<WeChatAppletTemplate> toProviderWeChatApplet() {
+        return null;
+    }
+
+    public List<WeChatAppletTemplate> toConstructionWeChatApplet() {
         return null;
     }
 }

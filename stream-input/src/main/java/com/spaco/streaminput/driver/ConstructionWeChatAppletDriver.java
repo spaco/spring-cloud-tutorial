@@ -5,8 +5,10 @@ import com.spaco.streaminput.abstraction.contract.Drivereable;
 import org.springframework.stereotype.Component;
 
 @Component
-public class WeChatAppletDriver  implements Drivereable {
+public class ConstructionWeChatAppletDriver implements Drivereable {
     @Override
     public void send(BaseNotification notification) {
+
+
     }
 }
