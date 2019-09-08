@@ -10,7 +10,7 @@ public class ProviderWeChatAppletDriver implements Drivereable {
     @Override
     public void send(BaseNotification notification) {
         for (WeChatAppletTemplate template:notification.toProviderWeChatApplet()){
-
+            
         }
     }
 }
