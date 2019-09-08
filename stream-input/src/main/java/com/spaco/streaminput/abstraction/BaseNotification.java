@@ -1,5 +1,6 @@
 package com.spaco.streaminput.abstraction;
 
+import com.spaco.streaminput.template.MailTemplate;
 import com.spaco.streaminput.template.SmsTemplate;
 import com.spaco.streaminput.template.WeChatAppletTemplate;
 import lombok.Data;
@@ -8,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-public abstract class AbstractNotification {
+public abstract class BaseNotification {
 
     public enum ViaType{
         mail("mail"),
@@ -21,23 +22,28 @@ public abstract class AbstractNotification {
         ViaType(String type) {
             this.type = type;
         }
+
+        public String getType() {
+            return type;
+        }
     }
 
     protected List<ViaType> via(){
         return null;
     }
 
-    protected void toMail() {
-    }
-
-    protected void toDatabase() {
-    }
-
-    protected SmsTemplate toSms() {
+    public MailTemplate toMail() {
         return null;
     }
 
-    protected WeChatAppletTemplate toWeChatApplet() {
+    public void toDatabase() {
+    }
+
+    public List<SmsTemplate> toSms() {
+        return null;
+    }
+
+    public WeChatAppletTemplate toWeChatApplet() {
         return null;
     }
 }

@@ -1,6 +1,6 @@
 package com.spaco.streaminput.notification;
 
-import com.spaco.streaminput.abstraction.AbstractNotification;
+import com.spaco.streaminput.abstraction.BaseNotification;
 import com.spaco.streaminput.message.InviteAgreeMessage;
 import com.spaco.streaminput.template.SmsTemplate;
 import com.spaco.streaminput.template.WeChatAppletTemplate;
@@ -8,7 +8,7 @@ import com.spaco.streaminput.template.WeChatAppletTemplate;
 import java.util.Arrays;
 import java.util.List;
 
-public class InviteAgreeNotification extends AbstractNotification {
+public class InviteAgreeNotification extends BaseNotification {
 
     private InviteAgreeMessage inviteAgreeMessage;
 

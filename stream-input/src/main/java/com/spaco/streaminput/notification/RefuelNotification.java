@@ -1,14 +1,15 @@
 package com.spaco.streaminput.notification;
 
-import com.spaco.streaminput.abstraction.AbstractNotification;
+import com.spaco.streaminput.abstraction.BaseNotification;
 import com.spaco.streaminput.message.RefuelMessage;
 import com.spaco.streaminput.template.SmsTemplate;
 import com.spaco.streaminput.template.WeChatAppletTemplate;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class RefuelNotification extends AbstractNotification {
+public class RefuelNotification extends BaseNotification {
 
     private RefuelMessage message;
 
@@ -22,11 +23,14 @@ public class RefuelNotification extends AbstractNotification {
     }
 
     @Override
-    public SmsTemplate toSms() {
+    public List<SmsTemplate> toSms() {
+        List<SmsTemplate> list = new ArrayList<>();
         SmsTemplate template = new SmsTemplate();
         template.setPhone(message.getPhone());
         template.setContent("申请通过");
-        return template;
+        list.add(template);
+
+        return list;
     }
 
     @Override

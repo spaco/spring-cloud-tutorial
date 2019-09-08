@@ -1,9 +1,10 @@
 package com.spaco.streaminput.template;
 
+import com.spaco.streaminput.abstraction.BaseTemplate;
 import lombok.Data;
 
 @Data
-public class WeChatAppletTemplate {
+public class WeChatAppletTemplate extends BaseTemplate {
     public String openId;
 
     public String templateId;

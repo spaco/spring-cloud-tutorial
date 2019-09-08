@@ -1,14 +1,37 @@
 package com.spaco.streaminput.abstraction;
 
 
-import org.springframework.stereotype.Service;
+import lombok.extern.log4j.Log4j2;
+import org.springframework.stereotype.Component;
+import com.spaco.streaminput.abstraction.BaseNotification.ViaType;
 
-@Service
+import java.lang.reflect.InvocationTargetException;
+
+@Component
+@Log4j2
 public class NotifyDispatcher {
+    private DriverManager driverManager;
 
-    public void notify(AbstractNotification notification){
-        for (AbstractNotification.ViaType viaType : notification.via()){
+    public NotifyDispatcher(DriverManager driverManager) {
+        this.driverManager = driverManager;
+    }
 
+    protected void notify(BaseNotification notification) {
+        log.error("this is notify");
+        //notifyDelay or notifyNow
+        this.notifyNow(notification);
+
+    }
+
+    private void notifyNow(BaseNotification notification)
+    {
+        for (ViaType viaType : notification.via()) {
+            this.driverManager.driver(viaType).send(notification);
         }
     }
+
+    private void notifyDelay(BaseNotification notification){
+
+    }
+
 }
