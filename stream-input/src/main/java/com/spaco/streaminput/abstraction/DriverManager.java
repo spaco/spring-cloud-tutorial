@@ -1,6 +1,7 @@
 package com.spaco.streaminput.abstraction;
 
 import com.spaco.streaminput.abstraction.contract.Drivereable;
+import com.spaco.streaminput.abstraction.util.StringUtil;
 import com.spaco.streaminput.driver.ConstructionWeChatAppletDriver;
 import com.spaco.streaminput.driver.MailDriver;
 import com.spaco.streaminput.driver.SmsDriver;
@@ -31,9 +32,9 @@ public class DriverManager {
         this.constructionWeChatAppletDriver = constructionWeChatAppletDriver;
     }
 
-    public Drivereable driver(ViaType viaType) {
+    Drivereable driver(ViaType viaType) {
         try {
-            return (Drivereable) this.getClass().getMethod("create" + viaType.getType() + "Driver").invoke(this);
+            return (Drivereable) this.getClass().getMethod("create" + StringUtil.toInitialsUpperCase(viaType.getType()) + "Driver").invoke(this);
         } catch (Exception exception) {
             throw null;
         }
