@@ -19,7 +19,7 @@ public class RefuelNotification extends BaseNotification {
 
     @Override
     public List<ViaType> via() {
-        return Arrays.asList(ViaType.mail, ViaType.sms, ViaType.providerWeChatApplet);
+        return Arrays.asList(ViaType.sms, ViaType.providerWeChatApplet);
     }
 
     @Override
@@ -38,10 +38,10 @@ public class RefuelNotification extends BaseNotification {
         List<WeChatAppletTemplate> list = new ArrayList<>();
 
         WeChatAppletTemplate template = new WeChatAppletTemplate();
-        template.setContent("{}");
+        template.setContent(message.getWeChatAppletContent());
         template.setFormId("formId mock");
-        template.setOpenId("openId mock");
-        template.setPage("/page/index?tenantId=123");
+        template.setOpenId(message.getOpenId());
+        template.setPage(message.getWeChatAppletPage());
         template.setTemplateId("config TemplateId");
         list.add(template);
 

@@ -1,17 +1,19 @@
 package com.spaco.streaminput.abstraction;
 
+import com.spaco.streaminput.abstraction.BaseNotification.ViaType;
 import com.spaco.streaminput.abstraction.contract.Drivereable;
 import com.spaco.streaminput.abstraction.util.StringUtil;
 import com.spaco.streaminput.driver.ConstructionWeChatAppletDriver;
 import com.spaco.streaminput.driver.MailDriver;
-import com.spaco.streaminput.driver.SmsDriver;
 import com.spaco.streaminput.driver.ProviderWeChatAppletDriver;
+import com.spaco.streaminput.driver.SmsDriver;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.spaco.streaminput.abstraction.BaseNotification.ViaType;
 import org.springframework.stereotype.Service;
 
 
 @Service
+@Log4j2
 public class DriverManager {
     private SmsDriver smsDriver;
 
@@ -33,29 +35,28 @@ public class DriverManager {
     }
 
     Drivereable driver(ViaType viaType) {
+        log.info("create" + StringUtil.toInitialsUpperCase(viaType.getType()) + "Driver");
         try {
             return (Drivereable) this.getClass().getMethod("create" + StringUtil.toInitialsUpperCase(viaType.getType()) + "Driver").invoke(this);
         } catch (Exception exception) {
-            throw null;
+            throw new RuntimeException("createMessageDriver failed");
         }
-//        if (Objects.nonNull(method)) {
-//            return (Drivereable) method.invoke(this);
-//        }
     }
 
-    private SmsDriver createSmsDriver() {
+    // must be public
+    public SmsDriver createSmsDriver() {
         return this.smsDriver;
     }
 
-    private MailDriver createMailDriver() {
+    public MailDriver createMailDriver() {
         return this.mailDriver;
     }
 
-    private ProviderWeChatAppletDriver createProviderWeChatAppletDriver() {
+    public ProviderWeChatAppletDriver createProviderWeChatAppletDriver() {
         return this.providerWeChatAppletDriver;
     }
 
-    private ConstructionWeChatAppletDriver createConstructionWeChatAppletDriver() {
+    public ConstructionWeChatAppletDriver createConstructionWeChatAppletDriver() {
         return this.constructionWeChatAppletDriver;
     }
 

@@ -5,7 +5,6 @@ import com.spaco.streaminput.template.SmsTemplate;
 import com.spaco.streaminput.template.WeChatAppletTemplate;
 import lombok.Data;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -29,9 +28,7 @@ public abstract class BaseNotification {
         }
     }
 
-    protected List<ViaType> via() {
-        return null;
-    }
+    protected abstract List<ViaType> via();
 
     // send to many people
     public List<MailTemplate> toMail() {

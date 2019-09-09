@@ -16,7 +16,6 @@ public class RefuelConsumer extends BaseConsumer {
     public void receive(RefuelMessage payload) {
         //openId 由那个服务获取？saas or notification
         log.error("received message: {}",payload);
-        System.out.println(payload);
 
 //        RefuelMessage message = new RefuelMessage();
 
