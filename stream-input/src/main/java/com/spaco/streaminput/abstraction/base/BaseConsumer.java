@@ -1,8 +1,6 @@
-package com.spaco.streaminput.abstraction;
+package com.spaco.streaminput.abstraction.base;
 
-import com.spaco.streaminput.driver.ConstructionWeChatAppletDriver;
-import com.spaco.streaminput.driver.SmsDriver;
-import com.spaco.streaminput.driver.ProviderWeChatAppletDriver;
+import com.spaco.streaminput.abstraction.NotifyDispatcher;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 

@@ -1,6 +1,6 @@
 package com.spaco.streaminput.template;
 
-import com.spaco.streaminput.abstraction.BaseTemplate;
+import com.spaco.streaminput.abstraction.base.BaseTemplate;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

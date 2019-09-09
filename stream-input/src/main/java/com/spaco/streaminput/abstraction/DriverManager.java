@@ -1,6 +1,6 @@
 package com.spaco.streaminput.abstraction;
 
-import com.spaco.streaminput.abstraction.BaseNotification.ViaType;
+import com.spaco.streaminput.abstraction.base.BaseNotification.ViaType;
 import com.spaco.streaminput.abstraction.contract.Drivereable;
 import com.spaco.streaminput.abstraction.util.StringUtil;
 import com.spaco.streaminput.driver.ConstructionWeChatAppletDriver;

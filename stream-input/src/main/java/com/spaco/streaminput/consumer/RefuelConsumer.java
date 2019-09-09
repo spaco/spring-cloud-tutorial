@@ -1,6 +1,6 @@
 package com.spaco.streaminput.consumer;
 
-import com.spaco.streaminput.abstraction.BaseConsumer;
+import com.spaco.streaminput.abstraction.base.BaseConsumer;
 import com.spaco.streaminput.channel.RefuelChannel;
 import com.spaco.streaminput.message.RefuelMessage;
 import com.spaco.streaminput.notification.RefuelNotification;

@@ -1,6 +1,7 @@
 package com.spaco.streaminput.notification;
 
-import com.spaco.streaminput.abstraction.BaseNotification;
+import com.spaco.streaminput.abstraction.base.BaseNotification;
+import com.spaco.streaminput.abstraction.domain.document.Notification;
 import com.spaco.streaminput.message.RefuelMessage;
 import com.spaco.streaminput.template.SmsTemplate;
 import com.spaco.streaminput.template.WeChatAppletTemplate;
@@ -58,6 +59,21 @@ public class RefuelNotification extends BaseNotification {
         template.setOpenId("openId mock2");
         template.setPage("/page/index?tenantId=1234");
         template.setTemplateId("config TemplateId2");
+        list.add(template);
+
+        return list;
+    }
+
+
+    @Override
+    public List<Notification> toMongo() {
+        List<Notification> list = new ArrayList<>();
+
+        Notification template = new Notification();
+        template.setSourceId(1112L);
+        template.setTitle("机械进场通知");
+        template.setUserId(111L);
+        template.setContent("{\"image_cover_url\":null,\"machine_name\":\"\\u5409\\u666e\\u8f66-\\u6e58AV002\",\"category_name\":\"\\u5176\\u4ed6\\u7c7b\\u578b\",\"brand_name\":\"\\u5176\\u4ed6\\u54c1\\u724c\",\"model_name\":\"\\u5176\\u4ed6\\u578b\\u53f7\",\"project_name\":\"\\u9879\\u76ee\\u6d4b\\u8bd501\"}");
         list.add(template);
 
         return list;

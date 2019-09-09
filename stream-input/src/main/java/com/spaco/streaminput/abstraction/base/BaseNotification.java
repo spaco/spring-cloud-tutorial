@@ -1,5 +1,6 @@
-package com.spaco.streaminput.abstraction;
+package com.spaco.streaminput.abstraction.base;
 
+import com.spaco.streaminput.abstraction.domain.document.Notification;
 import com.spaco.streaminput.template.MailTemplate;
 import com.spaco.streaminput.template.SmsTemplate;
 import com.spaco.streaminput.template.WeChatAppletTemplate;
@@ -15,7 +16,8 @@ public abstract class BaseNotification {
         sms("sms"),
         database("database"),
         providerWeChatApplet("providerWeChatApplet"),
-        constructionWeChatApplet("constructionWeChatApplet");
+        constructionWeChatApplet("constructionWeChatApplet"),
+        mongo("mongo");
 
         private final String type;
 
@@ -28,7 +30,7 @@ public abstract class BaseNotification {
         }
     }
 
-    protected abstract List<ViaType> via();
+    public abstract List<ViaType> via();
 
     // send to many people
     public List<MailTemplate> toMail() {
@@ -48,6 +50,10 @@ public abstract class BaseNotification {
     }
 
     public List<WeChatAppletTemplate> toConstructionWeChatApplet() {
+        return null;
+    }
+
+    public List<Notification> toMongo() {
         return null;
     }
 }

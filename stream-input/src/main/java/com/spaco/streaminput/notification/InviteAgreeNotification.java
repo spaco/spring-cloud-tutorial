@@ -1,6 +1,6 @@
 package com.spaco.streaminput.notification;
 
-import com.spaco.streaminput.abstraction.BaseNotification;
+import com.spaco.streaminput.abstraction.base.BaseNotification;
 import com.spaco.streaminput.message.InviteAgreeMessage;
 
 import java.util.Arrays;
