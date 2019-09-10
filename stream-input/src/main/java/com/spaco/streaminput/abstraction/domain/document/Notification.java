@@ -22,24 +22,33 @@ public class Notification extends BaseDocument {
     @Field("content")
     private String content;
 
-    @Field("content")
+    @Field("sourceId")
     private Long sourceId;
 
-    @Field("user_id")
+    @Field("userId")
     private Long userId;
 
-    @Field("is_read")
+    @Field("isRead")
     private Boolean isRead;
 
-    @Field("deleted_at")
+    @Field("deletedAt")
     private Timestamp deletedAt;
+
+    @Field("source")
+    private Source source;
+
+    @Field("type")
+    private Type type;
+
+    @Field("sourceType")
+    private SourceType sourceType;
 
     public enum Source {
         sxlq_rental("sxlq_rental"),
         provider("provider"),
         construction("construction");
 
-        private final String source;
+        private String source;
 
         Source(String type) {
             this.source = type;
@@ -48,6 +57,10 @@ public class Notification extends BaseDocument {
         public String getSource() {
             return source;
         }
+
+        public void setSource(String source) {
+            this.source = source;
+        }
     }
 
     public enum Type {
@@ -55,7 +68,7 @@ public class Notification extends BaseDocument {
         alarm("alarm"),
         review("review");
 
-        private final String type;
+        private String type;
 
         Type(String type) {
             this.type = type;
@@ -92,7 +105,7 @@ public class Notification extends BaseDocument {
         check_device_transfer("check_device_transfer"),
         check_device_transfer_completed("check_device_transfer_completed");
 
-        private final String sourceType;
+        private String sourceType;
 
         SourceType(String type) {
             this.sourceType = type;
