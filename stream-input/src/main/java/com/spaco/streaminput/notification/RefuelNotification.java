@@ -75,6 +75,8 @@ public class RefuelNotification extends BaseNotification {
         template.setUserId(message.getUserId());
         template.setContent(message.getContent());
         template.setSource(message.source);
+        template.setType(message.getType());
+        template.setSourceType(message.getSourceType());
         list.add(template);
 
         return list;
