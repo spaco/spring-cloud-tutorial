@@ -13,7 +13,7 @@ public class ConfigClientApplication {
     private static String filename;
 
     @Value("${filename}")
-    public void setImagesHost(String name) {
+    public void fileName(String name) {
         filename = name;
     }
 
