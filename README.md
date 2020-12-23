@@ -1,1 +1,1 @@
-# spring-cloud-tutorial
+# spring-tutorial
