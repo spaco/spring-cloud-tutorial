@@ -11,8 +11,13 @@ import org.springframework.security.oauth2.config.annotation.configurers.ClientD
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
+import org.springframework.security.oauth2.provider.token.TokenEnhancer;
+import org.springframework.security.oauth2.provider.token.TokenEnhancerChain;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Configuration
 @EnableAuthorizationServer
@@ -27,27 +32,40 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     private TokenStore tokenStore;
 
     private JwtAccessTokenConverter jwtAccessTokenConverter;
+
+    private JwtTokenEnhancer jwtTokenEnhancer;
+
     @Autowired
     public AuthorizationServerConfig(PasswordEncoder passwordEncoder,
                                      AuthenticationManager authenticationManager,
                                      UserDetailsService userDetailsService,
                                      @Qualifier("jwtTokenStore") TokenStore tokenStore,
-                                     JwtAccessTokenConverter jwtAccessTokenConverter) {
+                                     JwtAccessTokenConverter jwtAccessTokenConverter,
+                                     JwtTokenEnhancer jwtTokenEnhancer) {
         this.passwordEncoder = passwordEncoder;
         this.authenticationManager = authenticationManager;
         this.userDetailsService = userDetailsService;
         this.tokenStore = tokenStore;
         this.jwtAccessTokenConverter = jwtAccessTokenConverter;
+        this.jwtTokenEnhancer = jwtTokenEnhancer;
     }
 
 
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) {
+
+        TokenEnhancerChain enhancerChain = new TokenEnhancerChain();
+        List<TokenEnhancer> delegates = new ArrayList<>();
+        //配置JWT的内容增强器
+        delegates.add(jwtTokenEnhancer);
+        delegates.add(jwtAccessTokenConverter);
+        enhancerChain.setTokenEnhancers(delegates);
+
         endpoints
                 .authenticationManager(authenticationManager)
                 .userDetailsService(userDetailsService)
                 .tokenStore(tokenStore)
-                .accessTokenConverter(jwtAccessTokenConverter);
+                .tokenEnhancer(enhancerChain);
     }
 
 

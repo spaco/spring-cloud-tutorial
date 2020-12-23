@@ -23,5 +23,8 @@ public class JwtTokenConfig {
         accessTokenConverter.setSigningKey("dev");
         return accessTokenConverter;
     }
-
+    @Bean
+    public JwtTokenEnhancer jwtTokenEnhancer() {
+        return new JwtTokenEnhancer();
+    }
 }
