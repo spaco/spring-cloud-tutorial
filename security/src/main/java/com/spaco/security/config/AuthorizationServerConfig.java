@@ -2,6 +2,7 @@ package com.spaco.security.config;
 
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -10,6 +11,8 @@ import org.springframework.security.oauth2.config.annotation.configurers.ClientD
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
+import org.springframework.security.oauth2.provider.token.TokenStore;
+import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 
 @Configuration
 @EnableAuthorizationServer
@@ -21,19 +24,30 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
     private final UserDetailsService userDetailsService;
 
+    private TokenStore tokenStore;
+
+    private JwtAccessTokenConverter jwtAccessTokenConverter;
     @Autowired
     public AuthorizationServerConfig(PasswordEncoder passwordEncoder,
                                      AuthenticationManager authenticationManager,
-                                     UserDetailsService userDetailsService) {
+                                     UserDetailsService userDetailsService,
+                                     @Qualifier("jwtTokenStore") TokenStore tokenStore,
+                                     JwtAccessTokenConverter jwtAccessTokenConverter) {
         this.passwordEncoder = passwordEncoder;
         this.authenticationManager = authenticationManager;
         this.userDetailsService = userDetailsService;
+        this.tokenStore = tokenStore;
+        this.jwtAccessTokenConverter = jwtAccessTokenConverter;
     }
 
 
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) {
-        endpoints.authenticationManager(authenticationManager).userDetailsService(userDetailsService);
+        endpoints
+                .authenticationManager(authenticationManager)
+                .userDetailsService(userDetailsService)
+                .tokenStore(tokenStore)
+                .accessTokenConverter(jwtAccessTokenConverter);
     }
 
 
