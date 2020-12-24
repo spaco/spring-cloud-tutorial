@@ -1,0 +1,40 @@
+server:
+    port: 6666
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:  '*'
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+      - id: path_route
+        uri: https://example.org
+        predicates:
+        - Path=/red/{segment},/blue/{segment}
+      - id: path_route
+        uri: http://localhost:8082
+        predicates:
+        - Path=/gateway/**
+      - id: path_route
+        uri: http://localhost:8082
+        predicates:
+        - Path=/cm-api/**
+        filters:
+        - PrefixPath=/cm
+      - id: path_route
+        uri: http://localhost:8082
+        predicates:
+        - Path=/cp-api/**
+        filters:
+        - PrefixPath=/cp
+#    sentinel:
+#      transport:
+#        dashboard: localhost:8080
+#        port: 8080
+
